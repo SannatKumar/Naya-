@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proper Use of the class</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color:powderblue"><!-- Main part of the visible page is coded here"-->
+	<!--<script type="text/javascript">
+		document.write("Welcome to the New Age Digi care");
+		</script>-->
+	<div class="topbar">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="health.html">HEALTH INFORMATION</a></li>
+			<li><a href="benefits.html">BENEFITS</a></li>
+			<li><a href="myaccount.html">MYACCOUNT</a></li>
+		</ul>
+	</div>
+
+    <h1> Welcome to the Appointment booking</h1><!-- It gives heading 1 style to the inbetween text-->
+    <p> Here you can book your appointments.</p><!-- Paragraph -->
+    <form action="/action_page.php" target="_blank" method="post"><!-- Form started here,
+      actio defines the processing page or link, target _blank defines the submission occurs in next blank page,
+      method post is about not showing the input values(Unlike get method) on the address bar-->
+      <div class="aptsrchbar" align="left" style="width:600px; height:800px;">
+				<ul>
+					<li>Doctor: <input type ="radio" name="general" value="generalphysician" checked>General Physician<br></li><!-- Input type defines the type of the button-->
+					<input type ="radio" name="Special" value="special">Specialist<br></li>
+					<li>Time<input type="time" name="sosenumber" placeholder="Social/kela Number"><br></li>
+      		<li>Date<input type="date" name="date" placeholder="Input date here" required><br></li>
+      		<li>Place<input type="text" name="place" placeholder="Location" required><br></li>
+					<li>Gender: <input type ="radio" name="gender" value="male" checked>Male<br></li><!-- Input type defines the type of the button-->
+      		<input type ="radio" name="gender" value="female">Female<br></li>
+      		<li>Language:
+      		<select><!-- Select option creates the drop down menu-->
+					<option value="UA">Swedish</option>
+        	<option value="AE">Finnish</option>
+        	<option value="GB">English</option>
+        	<option value="US">Russian</option>
+</select></li>
+<br>
+      <input type="submit" value="submit"><!-- Submit button for the submission of the values-->
+<br>
+<li><p> Note: Please double check to make the information provided is correct to your best knowledge
+<br><q>And then you are ready to go</q> </p></li>
+</ul>
+</div>
+</form>
+	<div class="footer">
+		<ul>
+			<li><a href="#Contacts">Contacts</a></li>
+			<li><a href="#Help">Help</a></li>
+
+		</ul>
+	</div>
+
+</body>
+</html>
