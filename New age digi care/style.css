@@ -1,11 +1,21 @@
-body{
-  background-image: url('images/kotitori1.jpg');
-
+h1{
+  text-align: center;
 }
+#logo{
+
+    height: 100px;
+    width: 25%;
+  }
+
+/*body
+{
+  background-image: url("images/kotitori1.jpg");
+}*/
 .register {
    position: relative;;
    text-align: center;
 }
+/*.reg_form{background-color: blue;*/
 
 .register form{
   padding: 20px 0 0 0;
@@ -41,14 +51,15 @@ body{
   background-color: #111;
 }
 
+/*** middlebar **/
+
 .middlebar {
   min-height: 360px;
-     left: 0;
-     bottom: 0;
      height: 80%;
      width: 100%;
-     background-color: #00cc00;
+     background-color: rgb(106, 176, 67);
      text-align: center;
+     padding-top: 30px;
   }
 
 .middlebar ul{
@@ -71,10 +82,15 @@ body{
   background-color: #111;
 }
 
+/** Remainder form **/
+
+.middlebar form{
+
+}
 
 /***register form */
 .reg_form{
-  background-color: #00cc00;
+  background-color: powderblue;
   padding: 30px;
 }
 /***footer*/
@@ -89,15 +105,13 @@ body{
   list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  overflow: hidden;
 }
 .footer li a{
   display: block;
-  color: black;
+  color: white;
   padding: 28px 50px;
   text-decoration: none;
 }
 .footer li a:hover{
-  background-color:  #0000ff;
+  background-color: #111;
 }
