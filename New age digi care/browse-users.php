@@ -1,6 +1,7 @@
 <?php
     require_once 'include/config.php';
-    $output = $pdo->query('SELECT SSN, Name, Email, DOB FROM users');
+    $output = $pdo->query('SELECT sose,
+       username, password,firstname, lastname, dateofbirth, email, telephone, address, postcode, gender, country FROM user');
 ?>
 
 <html lang="en">
@@ -38,15 +39,23 @@
                     </thead>
                     <tbody>';
 
-                        while ($row = $output->fetch())
+                        while ($col = $output->fetch())
                         {
-                            $ssn = $row['SSN'];
-                            $name = $row['Name'];
-                            $email = $row['Email'];
-                            $dob = $row['DOB'];
+                            $sose = $col['sose'];
+                            $username = $col['username'];
+                            $password = $col['password'];
+                            $firstname= $col['firstname'];
+                            $lastname = $col['lastname'];
+                            $dateofbirth = $row['dateofbirth'];
+                            $email = $col['email'];
+                            $telephone = $col['telephone'];
+                            $address = $col['address'];
+                            $postcode = $col['postcode'];
+                            $gender = $col['gender'];
+                            $country = $col['country'];
 
                             echo '<tr>
-                                      <td>'.$ssn.'</td>
+                                      <td>'.$sose.'</td>
                                       <td>'.$name.'</td>
                                       <td>'.$email.'</td>
                                       <td>'.$dob.'</td>
@@ -56,9 +65,8 @@
 
                         echo '</tbody>
                                 </table>
-                            ';                
+                            ';
             ?>
         </div>
     </body>
 </html>
-

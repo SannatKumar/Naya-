@@ -9,19 +9,29 @@
 	<body>
 		<div class="topbar">
 			<ul>
-				<li><a href="index.html">HOME</a></li>
+				<li><a href="index.php">HOME</a></li>
 				<li><a href="health.html">HEALTH INFORMATION</a></li>
 				<li><a href="benefits.html">BENEFITS</a></li>
 				<li><a href="myaccount.html">MY ACCOUNT</a></li>
 			</ul>
 	</div>
 	<div class="register">
-			<form class="" action="index.html" method="post">
+			<?php
+			/*if(isset($_GET['msg'])){
+				echo $_GET['msg'];
+			}*/
+			?>
+			<form class="" action="accessed.php?process=login" method="post"><!-- ?process variable is required to identify and work later-->
+
+				<label for="username">Username:</label>
 				<input type="text" name="username" value="">
-				<input type="text" name="password" value="">
-				<button type="button" name="signin">Sign in</button>
-				<h2>or <a href="registerlink.html">Register</a></h2>
+
+				<label for="password">Password:</label>
+				<input type="password" name="password" value="">
+
+				<button type="submit" name="signin">Sign in</button>
 			</form>
+			<h2>or <a href="registerlink.html">Register</a></h2>
 	</div>
 	<div class="middlebar">
 		<ul>
@@ -33,8 +43,8 @@
 	</div>
 	<div class="footer">
 		<ul>
+			<li><a href="games.html">GAME</a></li>
 			<li><a href="contacts.html">Contacts</a></li>
-			<li><a href="help.html">Help</a></li>
 
 		</ul>
 	</div>

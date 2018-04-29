@@ -18,7 +18,7 @@
 			</script>-->
 		<div class="topbar">
 			<ul>
-				<li><a href="index.html">HOME</a></li>
+				<li><a href="index.php">HOME</a></li>
 				<li><a href="health.html">HEALTH INFORMATION</a></li>
 				<li><a href="benefits.html">BENEFITS</a></li>
 				<li><a href="myaccount.html">MY ACCOUNT</a></li>
@@ -27,15 +27,15 @@
 		<div class="reg_form">
 			<h1> Welcome to the Registration page</h1><!-- It gives heading 1 style to the inbetween text-->
 			<p> Here you can register yourself to the New Age Digi Care App</p><!-- Paragraph -->
-			<form action="/action_page.php" target="_blank" method="post"><!-- Form started here,
+			<form action="action_page.php" method="post"><!-- Form started here,
 				actio defines the processing page or link, target _blank defines the submission occurs in next blank page,
 				method post is about not showing the input values(Unlike get method) on the address bar-->
 							<label>Social Security Number:
-							</label><input type="text" name="sosenumber" placeholder="Social/kela Number"><br>
+							</label><input type="text" name="sose" placeholder="Social/kela Number"><br>
 							<label>Username:
 							</label><input type="text" name="username" placeholder="Alphabets and numbers" required><br>
 							<label>Password:
-							</label><input type="text" name="Password" placeholder="Alphabets and numbers" required><br>
+							</label><input type="text" name="password" placeholder="Alphabets and numbers" required><br>
 							<label>First name:
 							</label><input type="text" name="firstname" placeholder="Your first Name" required><!-- Input type defines the incoming values,
 							plaeholder holds the hint text, required means the page is not processed without the input in the respective field --><br>
@@ -48,18 +48,18 @@
 							<label>Email:
 							</label><input type="email" name="email" /><br>
 							<label>Telephone:
-							</label><input type="telephone" name="tel" /><br>
+							</label><input type="telephone" name="telephone" /><br>
 							<label>Address :
-							</label><input type="address" name="add" /><br>
+							</label><input type="address" name="address" /><br>
 							<label>Post Code :
-							</label><input type="postcode" name="ptc" /><br>
+							</label><input type="postcode" name="postcode" /><br>
 							<label>Gender:
 							</label><input type ="radio" name="gender" value="male" checked>Male<!-- Input type defines the type of the button-->
 							<input type ="radio" name="gender" value="female">Female
 							<label>Other</label>
 							<input type ="radio" name="gender" value="other" ><br>
 							<label>Country:</label>
-							<select><!-- Select option creates the drop down menu-->
+							<select name="country"><!-- Select option creates the drop down menu-->
 						<option value="AF">Afghanistan</option><!-- Here you put values of your drop down menu-->
 						<option value="AX">Åland Islands</option>
 						<option value="AL">Albania</option>
@@ -311,7 +311,7 @@
 						<option value="ZW">Zimbabwe</option>
 					</select>
 							<br>
-							<input type="submit" value="submit"><!-- Submit button for the submission of the values-->
+							<input type="submit" value="Submit"><!-- Submit button for the submission of the values-->
 							<br><br>
 							<p> Note: Please double check to make the information provided is correct to your best knowledge
 							<br><q>And then you are ready to go</q> </p>
@@ -320,8 +320,8 @@
 			</div>
 			<div class="footer">
 				<ul>
-					<li><a href="#Contacts">Contacts</a></label>
-					<li><a href="#Help">Help</a></label>
+					<li><a href="games.html">GAME</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
 				</ul>
 			</div>
 	</body>

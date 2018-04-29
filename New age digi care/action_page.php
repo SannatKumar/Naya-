@@ -19,11 +19,11 @@
 		// Check if unique here
 
 
-		$sql =  "INSERT INTO users (username, email)
-							VALUES ('$_POST[username]', '$_POST[email]')";
+		$sql =  "INSERT INTO user (sose,username,password,firstname,lastname,dateofbirth, email,telephone,address,postcode,gender,country)
+							VALUES ('$_POST[sose]','$_POST[username]','$_POST[password]','$_POST[firstname]','$_POST[lastname]','$_POST[dob]',
+								'$_POST[email]','$_POST[telephone]','$_POST[address]','$_POST[postcode]','$_POST[gender]','$_POST[country]')";
     		// use exec() because no results are returned
     		$connect->exec($sql);
-    		echo "New record created successfully";
 	}
 	catch(PDOException $e){
 		echo "Database Error: " . $e->getMessage();
@@ -31,5 +31,5 @@
 
 	$connect = null;
 
-	header('Location: index.html');
+	header('Location: index.php');
 ?>
